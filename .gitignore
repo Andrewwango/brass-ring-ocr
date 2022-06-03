@@ -3,6 +3,7 @@ __pycache__/
 *.jpg
 *.png
 *.pth
+!docs
 *.py[cod]
 *$py.class
 
