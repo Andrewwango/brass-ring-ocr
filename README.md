@@ -30,6 +30,15 @@ Then we pass the rectangles through the [CRAFT text detector](https://github.com
 
 ![](docs/text_crop_1.png) ![](docs/text_crop_2.png) ![](docs/text_crop_3.png) ![](docs/text_crop_4.png) ![](docs/text_crop_5.png) ![](docs/text_crop_6.png)
 
+<p float="left">
+  <img src="docs/text_crop_1.png" width="30" />
+  <img src="docs/text_crop_2.png" width="30" />
+  <img src="docs/text_crop_3.png" width="30" />
+  <img src="docs/text_crop_4.png" width="30" />
+  <img src="docs/text_crop_5.png" width="30" />
+  <img src="docs/text_crop_6.png" width="30" />
+</p>
+
 
 Then we pass the crops through the [4-stage scene text recognition pipeline](https://github.com/clovaai/deep-text-recognition-benchmark). We don't need their pre-processing stage nor their corpus likelihood model, since the output text isn't standard English. Then we detect the best orientation for each segment by comparing confidences, and also pass the segments through a hardcoded rulebook - for example, `NIM` should always return `WIN`. We collect these segments into a bag of words for each image.
 
