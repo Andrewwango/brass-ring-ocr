@@ -28,7 +28,8 @@ First warp image from polar coordinates to obtain rectangular images. Then detec
 
 Then we pass the rectangles through the [CRAFT text detector](https://github.com/fcakyon/craft-text-detector) to give bounding boxes of what the model considers "words". The three thresholds given change how likely characters are to exist and how likely characters are to be grouped into words. See example crops below. Note that there is still arbitrary orientation of the crops. Out of all the stages in the method, CRAFT performs the worst (it should get better once you tune the hyperparameters, although there must be better and faster alternatives out there).
 
-![](text_crop_1.png) ![](text_crop_2.png) ![](text_crop_3.png) ![](text_crop_4.png) ![](text_crop_5.png) ![](text_crop_6.png)
+![](docs/text_crop_1.png) ![](docs/text_crop_2.png) ![](docs/text_crop_3.png) ![](docs/text_crop_4.png) ![](docs/text_crop_5.png) ![](docs/text_crop_6.png)
+
 
 Then we pass the crops through the [4-stage scene text recognition pipeline](https://github.com/clovaai/deep-text-recognition-benchmark). We don't need their pre-processing stage nor their corpus likelihood model, since the output text isn't standard English. Then we detect the best orientation for each segment by comparing confidences, and also pass the segments through a hardcoded rulebook - for example, `NIM` should always return `WIN`. We collect these segments into a bag of words for each image.
 
