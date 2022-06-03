@@ -31,12 +31,12 @@ Then we pass the rectangles through the [CRAFT text detector](https://github.com
 ![](docs/text_crop_1.png) ![](docs/text_crop_2.png) ![](docs/text_crop_3.png) ![](docs/text_crop_4.png) ![](docs/text_crop_5.png) ![](docs/text_crop_6.png)
 
 <p float="left">
-  <img src="docs/text_crop_1.png" width="30" />
-  <img src="docs/text_crop_2.png" width="30" />
-  <img src="docs/text_crop_3.png" width="30" />
-  <img src="docs/text_crop_4.png" width="30" />
-  <img src="docs/text_crop_5.png" width="30" />
-  <img src="docs/text_crop_6.png" width="30" />
+  <img src="docs/text_crop_1.png" width="100" />
+  <img src="docs/text_crop_2.png" width="100" />
+  <img src="docs/text_crop_3.png" width="100" />
+  <img src="docs/text_crop_4.png" width="100" />
+  <img src="docs/text_crop_5.png" width="100" />
+  <img src="docs/text_crop_6.png" width="100" />
 </p>
 
 
